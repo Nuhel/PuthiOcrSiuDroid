@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#0078D7"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Source \n Language"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"></Spinner>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="Destination\nLanguage"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"></Spinner>
+
+    </LinearLayout>
+    
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/roundedcorner"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="Source Language"
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/roundedcorner"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="Converted Language"
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+        
+    </ScrollView>
+
+    <Button
+        android:text="Convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
